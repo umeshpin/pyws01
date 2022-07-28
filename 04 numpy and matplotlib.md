@@ -173,6 +173,14 @@ plt.plot(x,y)				# to plot
 plt.grid(True)				# to show graph in grid 
 
 ```
+```python
+x = np.linspace(0, 10, 1000)
+fig, ax = plt.subplots()
+ax.plot(x, np.sin(x), '-b', label='Sine')
+ax.plot(x, np.cos(x), '--r', label='Cosine')
+ax.axis('equal')
+leg = ax.legend();
+```
 
 ```python
 import matplotlib.pyplot as plt
