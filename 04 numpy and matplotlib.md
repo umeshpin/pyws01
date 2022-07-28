@@ -173,3 +173,31 @@ plt.plot(x,y)				# to plot
 plt.grid(True)				# to show graph in grid 
 
 ```
+
+```python
+import matplotlib.pyplot as plt
+
+# Monthly average precipitation
+percentage_increase = [0.70, 0.75, 1.85, 2.93, 3.05, 2.02, 
+                          1.93, 1.62, 1.84, 1.31, 1.39, 0.84]
+
+# Month names for plotting
+months = ["Jan", "Feb", "Mar", "Apr", "May", "June", "July", 
+          "Aug", "Sept", "Oct", "Nov", "Dec"]
+
+
+# Define plot space
+fig, ax = plt.subplots(figsize=(10, 6))
+
+# Define x and y axes
+ax.plot(months, 
+        percentage_increase)
+
+# Set plot title and axes labels
+ax.set(title = "Average Monthly increase in Petrol price",
+       xlabel = "Month",
+       ylabel = "percentage_increase")
+
+plt.show()
+
+```
